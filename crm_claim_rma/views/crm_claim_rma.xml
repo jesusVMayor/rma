@@ -278,6 +278,7 @@
             <field name="arch" type="xml">
                 <!-- Header/workflow Buttons -->
                 <field name="stage_id" position="before">
+                    <field name="claim_type" invisible="1"/>
                     <button
                         name="%(action_claim_picking_in)d"
                         type="action" string="New Products Return"
@@ -401,7 +402,7 @@
                         <separator colspan="2" string="Receptions / Deliveries"/>
                         <field name="picking_ids" colspan="4" readonly="1"/>
                     </page>
-	            </page>
+                </page>
             </field>
         </record>
 
